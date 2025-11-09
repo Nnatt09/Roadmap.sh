@@ -2,20 +2,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Testimonial Cards</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-
 </head>
 
-<header>
-    <h1>Testimonial Cards</h1>
-</header>
-
 <body>
+    <header>
+        <h1>Testimonial Cards</h1>
+    </header>
     
     <main>
         <!-- artem's review bubble part -->
@@ -83,10 +80,13 @@
         </div>
         
     </main>
-
     
+    <footer>
+        <p>&copy; <span id="year"></span> Testimonial Cards Project</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
-
-<footer>&copy; 2024</footer>
-
 </html>
