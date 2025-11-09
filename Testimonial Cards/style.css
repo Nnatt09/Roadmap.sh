@@ -1,0 +1,242 @@
+body{
+    background: #1b1b1b;
+}
+
+header{
+    margin-top: 3%;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+}
+
+/* -------------- main ------------- */
+main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 15%;
+    margin-top: 5%;
+    margin-bottom:40px;
+}
+
+/* ---- artem's----- */
+#testimonial1{
+    display: flex;
+    justify-content: space-around;
+}
+
+#testimonial1 .bubble1::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    left: 50px;
+    bottom: -15px;
+    z-index: -1;
+    background-color: white;
+    clip-path: polygon(0 0, 7% 100%, 100% 0);
+    /* https://bennettfeely.com/clippy/ */
+}
+
+.container1{
+    padding: 10px;
+    align-content: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.bubble1{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.bubble1 p{
+    color: #000;
+    font-size: small;
+}
+
+.profile-sec{
+    display: flex;
+    width:fit-content;
+    height: fit-content;
+    justify-content: space-between;
+    margin: 25px;
+    margin-bottom: 0;
+}
+
+.name1 h3, p { 
+    font-family: Verdana;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+}
+
+.name1 h3{
+    color: white;
+}
+
+.name1 p{
+    color: rgb(154, 154, 154);
+    margin-top: 0;
+    font-size: small;
+}
+
+.card1{
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 2px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    width: fit-content;
+}
+
+.text1{
+    color: white;
+    font-family: Verdana;
+    font-size: small;
+}
+
+.profilePic{
+    width:75px;
+    height: 71px;
+    border-radius: 50%;
+}   
+
+/* ----jackie's----- */
+#testimonial2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.profilePic2{
+    width: 212px;
+    height: 210px;
+    border-radius: 20%;
+}
+
+.fa-star{
+    color: rgb(255, 213, 0); 
+    font-size:medium;
+}
+
+.bubble2{
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 30px;
+    margin-left: 30px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.bubble2::after{
+    content: '';
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    left: -20px;
+    top: 60px;
+    z-index: -1;
+    background-color: white;
+}
+
+.bubble2 h3{
+    color: black;
+    font-family: verdana;
+    margin-bottom: -5px;
+    margin-top: 15px;
+}
+
+.bubble2 p{
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: small;
+    line-height: 0.6cm;
+}
+.userposition{
+    color: rgb(154, 154, 154);
+    font-size: small;
+}
+
+
+/* user's message */
+.container2{
+    outline: white;
+    outline-width: 2px;
+    border-radius: 20px;
+    padding: 35px;
+    justify-items: center;
+    outline-style: solid;
+    margin-top: 5%;
+
+}
+
+.container2 p{
+    font-size: small;
+    color: white;
+    font-family: verdana;
+    text-align: center;
+    margin: 0;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.carousel >img{
+    border-radius: 50%;
+    align-content: space-around;
+}
+
+.car-img{
+    opacity: 50%;
+    width: 40;
+    height: 38;
+}
+
+.car-img-center{
+    width: 60;
+    height: 58;
+}
+
+.fa-chevron-left, .fa-chevron-right{
+    color: white;
+}
+
+.fa-chevron-left:hover{
+    color: rgb(118, 118, 118);
+}
+
+.fa-chevron-right:hover{
+    color: rgb(118, 118, 118);
+}
+
+.container2 h5{
+    color: white;
+    font-family: verdana;
+    text-align: center;
+    font-size:medium;
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer{
+    color: rgb(104, 104, 104);
+    text-align: center;
+    font-family: verdana;
+    font-size: small;
+    margin-top: 8%;
+    margin-bottom: 30px;
+}
