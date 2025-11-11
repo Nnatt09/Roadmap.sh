@@ -1,0 +1,131 @@
+header{
+    text-align: center;
+    margin: 3%;
+    margin-bottom: 50px;
+}
+
+/* -------------MAIN--------------- */
+
+body{
+    background: rgb(246, 245, 245);
+}
+
+main{
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+/* -------------input date placeholder------------- */
+.date-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:auto;
+    height: 30px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: rgb(164, 164, 164);
+    border-radius: 8px;
+    padding: 8px;
+    font-family: Franklin Gothic;
+}
+
+.date-input input{
+    width: fit-content;
+    margin-left: 15px;
+    border: none;
+    letter-spacing: 0.4mm;
+    background: none;
+    color: rgb(105, 105, 105);
+}
+.date-input button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* --------------------CALENDAR------------------- */
+#calendar{
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: auto 80px auto 80px;
+}
+
+/* --------months/years display----------- */
+.monthsyears{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 25px 30px 10px 30px;
+}
+
+.monthsyears p{
+    margin: 0;
+    font-family: Franklin Gothic;
+}
+
+.fa-solid{
+    color: rgb(99, 99, 99);
+}
+.fa-solid:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/* --------------weeks display----------- */
+.weeks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 10px 10px 10px;
+}
+
+h5{
+    margin-bottom: 0;
+    padding: 0;
+    color: rgb(118, 36, 225);
+    font-family: Franklin Gothic;
+}
+
+/* -----------------days----------------------- */
+.days{
+    position: relative; 
+    margin:auto 10px 15px 10px;
+}
+
+.days button{
+    background: none;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days button:hover{
+    width: 40px;
+    height: 40px;   
+    border-radius: 50%;
+    background-color: rgb(110, 110, 238);
+}
+
+
+.days>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first{
+    justify-content: flex-end;
+}
+
+.first>div{
+    width: 40px;
+}
