@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <main>
+    <div class="form-container">
+      <table>
+        <tr>
+          <td>
+            <label for="name">Full Name</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" id="name" required placeholder="What should we call you?">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="email" name="email" id="email" placeholder="What is your email?" value="john@doe.com">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Enter Password</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="password" name="password" id="password" placeholder="Enter Password">
+            <div class="eye1">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="confirm-password">Confirm Password</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="password" name="password" id="confirm-password" placeholder="Confirm Password">
+            <div class="eye2">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Update Profile">
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- --- Right Side Container --- -->
+    <div class="container">
+      <div class="progress-bar">
+        <svg width="120" height="120">
+          <circle class="progress-bar-bg" r="50" cx="60" cy="60" fill="none" stroke="#eee" stroke-width="8" />
+          <circle class="progress-bar-circle" r="50" cx="60" cy="60" fill="none" stroke="black" stroke-width="8"
+            transform="rotate(36 60 60)" stroke-dasharray="314" stroke-dashoffset="109.9" />
+        </svg>
+        <p>65%</p>
+      </div>
+
+      <h6>Profile Completeness</h6>
+
+      <ul>
+        <li class="li-completed">
+          <p>Create an account</p>
+        </li>
+        <li class="li-completed">
+          <p>Update Roadmap Progress</p>
+        </li>
+        <li class="li-completed">
+          <p>Setup Public Profile</p>
+        </li>
+        <li class="li-uncomplete">
+          <p>Complete your first project</p>
+        </li>
+        <li class="li-uncomplete">
+          <p>Invite your friends</p>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>

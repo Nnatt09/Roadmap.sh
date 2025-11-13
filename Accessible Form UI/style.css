@@ -1,0 +1,120 @@
+/* --- General Styles --- */
+body {
+  background: rgb(247, 245, 245);
+}
+
+main {
+  position: absolute;
+  top: 15px;
+  left: 25%;
+  margin: 5%;
+  display: flex;
+  grid-column: 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  background: white;
+  box-shadow: 0px 2px 20px 0px grey;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* --- Form Container --- */
+.form-container {
+  display: grid;
+  grid-row: repeat(5, 1fr);
+  padding-left: 10px;
+}
+
+input {
+  position: relative;
+  height: 35px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  width: 15rem;
+  border-radius: 5px;
+}
+
+td {
+  position: relative;
+}
+
+td > label {
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.eye1,
+.eye2 {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  right: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+/* --- Right Side Container --- */
+.container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 20px 0 20px;
+}
+
+h6 {
+  text-align: center;
+  font-size: medium;
+  font-weight: lighter;
+  margin: 20px auto 10px auto;
+}
+
+ul {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 30px auto;
+  list-style: none;
+  padding: 20px;
+  background-color: rgba(221, 221, 221, 0.761);
+  border-radius: 15px;
+}
+
+li p {
+  margin: 8px auto;
+}
+
+.li-completed {
+  text-decoration-line: line-through;
+  color: gray;
+}
+
+/* --- Progress Bar --- */
+.progress-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar p {
+  position: absolute;
+  left: 43%;
+  top: 29%;
+  font-weight: bold;
+  font-size: large;
+}
+
+.progress-bar-circle {
+  transition: stroke-dashoffset 0.9s ease; /* Add a smooth transition */
+}
